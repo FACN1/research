@@ -1,0 +1,31 @@
+# allow custom colours (for files, directories etc.)
+export CLICOLOR=1
+# set custom colours
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+#set variables
+RED="\[$(tput setaf 9)\]"
+GREEN="\[$(tput setaf 2)\]"
+YELLOW="\[$(tput setaf 11)\]"
+BLUE="\[$(tput setaf 12)\]"
+RESET="\[$(tput sgr0)\]"
+
+# credit: https://mfitzp.io/article/add-git-branch-name-to-terminal-prompt-mac/
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+add_birthday_message() {
+  # TODO
+}
+
+# customise prompt 1
+# RESET resets formatting
+export PS1="${RED}\A ${YELLOW}\u:${BLUE}\W${GREEN}$(parse_git_branch)${RESET}> "
+# default is PS1='[\u@\h \W]\$ ‘
+
+# can also add 😍
+# see http://apps.timwhitlock.info/emoji/tables/unicode
+
+# set aliases, if you want
+alias ls='ls -GFhl'
