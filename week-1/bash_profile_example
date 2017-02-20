@@ -15,10 +15,6 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-add_birthday_message() {
-  # TODO
-}
-
 # customise prompt 1
 # RESET resets formatting
 export PS1="${RED}\A ${YELLOW}\u:${BLUE}\W${GREEN}$(parse_git_branch)${RESET}> "
