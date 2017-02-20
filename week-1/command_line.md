@@ -35,10 +35,11 @@ make
 make install
 ```
 
-### Summary of commands:
+### Summary of example commands:
 - cd ~/Desktop/test-compile
 - wget https://nodejs.org/download/nightly/v8.0.0-nightly20170219751404dc28/node-v8.0.0-nightly20170219751404dc28.tar.xz
 - tar xzvf node-v8.0.0-nightly20170219751404dc28.tar.xz
 - cd node-v8.0.0-nightly20170219751404dc28
 - make
 ----------------------
+
