@@ -43,3 +43,20 @@ make install
 - make
 ----------------------
 
+### Git Aliases
+
+Git won't automatically infer partial commands so you can set
+up aliases using git config, enter: 
+```
+git config --global alias.<chosen alias> <git command>
+```
+You can also use it to create commands you think should exist.
+
+For example, to view the last commit, enter:
+```
+git config --global alias.last 'log -1 HEAD'
+```
+To undo aliases simply enter:
+```
+git config --global --unset alias.<chosen alias>
+```
