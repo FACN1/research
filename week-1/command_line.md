@@ -60,3 +60,59 @@ To undo aliases simply enter:
 ```
 git config --global --unset alias.<chosen alias>
 ```
+
+## Fancy Terminal CuStomIsAtIoN
+
+## Simple customisation:
+Open Terminal preferences (e.g. profiles > text) and change colours, font, etc.
+
+## Bash prompt customisation:
+open the bash_profile file:
+```
+atom ~/.bash_profile
+```
+(.bashrc on linux)
+(~ is for home directory, presumably you could also customise the terminal only in specific directories)
+
+### Things you can customise:
+- colours
+- prompt:
+  - change wording
+  - see git branch
+  - full customisation
+- aliases
+
+Example customisation (coming soon):
+[custom terminal example](./custom-terminal-example.png)
+
+[Link](./bash_profile_example) to example .bash_profile file.
+
+### Instructions:
+enter this into the file:
+```
+# allow custom colours (for files, directories etc.)
+export CLICOLOR=1
+# set custom colours
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+# customise prompt 1
+export PS1="\A \h:\u \W> "
+
+# example alias:
+# check out what the flags do with "man ls"
+alias ls='ls -GFhl'
+```
+
+When you update the .bash_profile file, either reopen terminal or type
+```
+source ~/.bash_profile
+```
+to see the changes.
+
+### Further reading/sources:
+https://wiki.archlinux.org/index.php/Bash/Prompt_customization
+http://man.cx/bash#heading27
+
+### other options:
+- [iterm2](https://www.iterm2.com/)
+
