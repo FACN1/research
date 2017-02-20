@@ -3,13 +3,9 @@ Research day should be thought of as a [spike](http://www.extremeprogramming.org
 
 ## Week 1 - toolkit
 + [Command Line](nice-link-here)
-
-+ Git/Github  - [Best Practices](nice-link-here)
-
-+ Accessibility - [Chosen website](nice-link-here)  
-[Before](nice-link-here) | [After](nice-link-here)
-
-+ CSS - [Chosen website](nice-link-here)  
++ [Git/Github Best Practices](nice-link-here)
++ [Accessibility](nice-link-here)  
++ CSS - [Chosen website](nice-link-here)
 [Before](nice-link-here) | [After](nice-link-here)
 
 ## Week 2 - testing
