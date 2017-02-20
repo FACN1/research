@@ -82,8 +82,9 @@ atom ~/.bash_profile
   - full customisation
 - aliases
 
-Example customisation (coming soon):
-[custom terminal example](./custom-terminal-example.png)
+Example customisation:
+
+![custom terminal example](./custom-terminal-example.png)
 
 [Link](./bash_profile_example) to example .bash_profile file.
 
