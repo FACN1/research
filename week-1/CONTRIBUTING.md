@@ -6,10 +6,10 @@
 
 In order to determine how frequently you should commit, it is advised to follow this general guide:
 
-	- Think of something that needs to be fixed.
-	- Do the work!
-	- Test it works
-	- Add and commit
+- Think of something that needs to be fixed.
+- Do the work!
+- Test it works
+- Add and commit
 
 If you are in ever in doubt, commit early and often :)
 
@@ -50,24 +50,29 @@ https://chris.beams.io/posts/git-commit/
 1. Initialise your repo on Github (skip if cloning an existing repo), ensuring you initialise with a Readme.MD file.
 2. Copy the URL of your repo from Gitub, and clone onto your local machine from the terminal, like so:
   - In your command line, go to the directory you want the repo to be in.
-    $ cd anydir
+   
+   `$ cd anydir`
+  
   - Use the git clone command to clone the repo.
-    $ git clone https://your.URL.here
+  
+  `$ git clone https://your.URL.here`
 
 3. The git repo is now on your machine, but you will need to cd into it still to start work.
 
 4. First thing will normally be to start a new branch, or switch to the branch you were working on before:
 
-    $ git checkout -b newbranchname
+    `$ git checkout -b newbranchname`
 
   This makes a new branch called *newbranchname*. and  "checks it out" i.e. move to it.
-    $ git checkout branchIamWorkingOn
+    
+    `$ git checkout branchIamWorkingOn`
+    
   This checks out to an already existing branch called *branchIamWorkingOn*.
 
 5. After making changes to files whilst working, you should add and commit.
 
-    $ git add filename.filetype
-    $ git commit -m "commit message here"
+    `$ git add filename.filetype
+    $ git commit -m "commit message here"`
 
 This saves the current states of your files into the git repo, meaning you can access them exactly as they are now, at any point in the future.
 
@@ -76,21 +81,26 @@ This saves the current states of your files into the git repo, meaning you can a
 However, before you do these, you want to make sure your branch is up to date with any changes to the master branch.
 
 7. So, first checkout to master branch
-    $ git checkout master
+
+    `$ git checkout master`
 
 8. Then you need to *pull* from the remote on Github onto your machine.
-    $ git pull origin master
+
+    `$ git pull origin master`
 
 9. Then go back to your branch
-    $ git checkout mybranch
+
+	`$ git checkout mybranch`
 
 10. Then you need to *merge* the new master on your local machine with your branch.
-    $ git merge master
+
+    `$ git merge master`
 
 This merges the branch you are one with your local master branch.
 
 11. You can then push your branch to the remote, save in the knowledge that is up to date with the current remote master, which means when you make a pull request it should merge a lot easier.
-    $ git push origin mybranch
+
+    `$ git push origin mybranch`
 
 12. Now you must go to your Repo on Github, and then on the branch drop down menu direct to your branch.
 
