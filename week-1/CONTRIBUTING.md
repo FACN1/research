@@ -48,6 +48,7 @@ https://chris.beams.io/posts/git-commit/
 ##Standard Procedure:
 
 1. Initialise your repo on Github (skip if cloning an existing repo), ensuring you initialise with a Readme.MD file.
+
 2. Copy the URL of your repo from Gitub, and clone onto your local machine from the terminal, like so:
   - In your command line, go to the directory you want the repo to be in.
    
@@ -72,13 +73,12 @@ https://chris.beams.io/posts/git-commit/
 5. After making changes to files whilst working, you should add and commit.
 
     `$ git add filename.filetype
-    $ git commit -m "commit message here"`
+    $ git commit -m "commit message here"` 
+    
+    This saves the current states of your files into the git repo, meaning you can access them exactly as they are now, at any point in the future.
 
-This saves the current states of your files into the git repo, meaning you can access them exactly as they are now, at any point in the future.
-
-6. These are now saved to your branch, but only on your local computer, they now need to be pushed to the remote repo on Github.
-
-However, before you do these, you want to make sure your branch is up to date with any changes to the master branch.
+6. These are now saved to your branch, but only on your local computer, they now need to be pushed to the remote repo on Github. 
+   However, before you do these, you want to make sure your branch is up to date with any changes to the master branch.
 
 7. So, first checkout to master branch
 
@@ -94,9 +94,7 @@ However, before you do these, you want to make sure your branch is up to date wi
 
 10. Then you need to *merge* the new master on your local machine with your branch.
 
-    `$ git merge master`
-
-This merges the branch you are one with your local master branch.
+    `$ git merge master` This merges the branch you are one with your local master branch.
 
 11. You can then push your branch to the remote, save in the knowledge that is up to date with the current remote master, which means when you make a pull request it should merge a lot easier.
 
