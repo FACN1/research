@@ -1,9 +1,8 @@
 # Unit vs Integration Testing
 
 ## Contents
-[Intro](#unit-testing)
-[Resources](#resources)
-
+- [Intro](#unit-testing)
+- [Resources](#resources)
 
 ### Unit Testing
 - Used to test relatively small, isolated pieces / units of code
