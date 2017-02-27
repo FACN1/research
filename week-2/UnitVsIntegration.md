@@ -67,5 +67,5 @@ Test Case ID | Test Case Objective | Test Case Description | Expected Result
 ### Examples
 
 ### Resources
-- [Short example](https://www.youtube.com/watch?v=0GypdsJulKE)
-- ["What is Integration Testing?"](https://www.youtube.com/watch?v=QYCaaNz8emY)
+- [Short video](https://www.youtube.com/watch?v=0GypdsJulKE) explaining unit vs integration testing.
+- Youtube video - ["What is Integration Testing?"](https://www.youtube.com/watch?v=QYCaaNz8emY)
