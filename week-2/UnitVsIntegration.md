@@ -1,7 +1,7 @@
 # Unit vs Integration Testing
 
 ### Unit Testing
-- Used to test relatively small pieces / units of code
+- Used to test relatively small, isolated pieces / units of code
 - The tests should be narrow in scope, and easy to write and execute
 - They should be pure - outside dependencies are "mocked" or "stubbed out"
 - Written by and for the programmer to identify bugs early in the development cycle
