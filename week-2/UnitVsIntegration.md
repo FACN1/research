@@ -8,7 +8,7 @@
 
 ## Intro
 - Unit testing is focused on individual methods and functions, and getting very specific on on how each of them perform in isolation
-- Integration testing is where you do not concern yourself with the overall application. With web apps it may require things such as automating user interaction with the browser, or creating a database.
+- Integration testing is where you do not concern yourself with the overall application. With web apps it may require things such as automating user interaction with the browser, or creating a database, so often you need a sophisticated test suite.
 
 ## Unit Testing
 - Used to test relatively small, isolated pieces / units of code
@@ -34,7 +34,7 @@ Save a lot of time in the future |
 #### Big Bang
 All components are integrated together at once, and then tested.
 
-{Pros | Cons
+Pros | Cons
 ------------ | -------------
 Convenient for small systems | Fault Localization is difficult.
  | Some interferences could be easily missed.
@@ -82,8 +82,8 @@ Test Case ID | Test Case Objective | Test Case Description | Expected Result
   1 | Check the interface link between the Login and Mailbox module |	Enter login credentials and click on the Login button |	To be directed to the Mail Box
   2 | Check the interface link between the Mailbox and Delete Mails Module | From Mail box select an email and click delete button | Selected email should appear in the Deleted/Trash folder
 
-### Examples
-
 ### Resources
+- [Workshop by Mavis](https://github.com/FACN1/research/blob/UnitvIntegration/week-2/UnitvIntWorkshop.md) on basic unit and integration testing.
+- DWYL [tutorial for Nightwatch.js](https://github.com/dwyl/learn-nightwatch) which can run automated browser tests.
 - [Short video](https://www.youtube.com/watch?v=0GypdsJulKE) explaining unit vs integration testing.
-- Youtube video - ["What is Integration Testing?"](https://www.youtube.com/watch?v=QYCaaNz8emY)
+- Youtube video - ["What is Integration Testing?"](https://www.youtube.com/watch?v=QYCaaNz8emY).
