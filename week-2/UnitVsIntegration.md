@@ -8,7 +8,7 @@
 
 ## Intro
 - Unit testing is focused on individual methods and functions, and getting very specific on on how each of them perform in isolation.
-- Integration testing is more focused on the application as a whole. With web apps it may require things such as automating user interaction with the browser, or creating a database, so often you need a slightly more sophisticated test setup.
+- Integration testing is more focused on how different parts of the app work together, and even the app as a whole. With web apps it may require things such as automating user interaction with the browser, or creating a database, so often you need a slightly more sophisticated test setup.
 
 ## Unit Testing
 - Used to test relatively small, isolated pieces / units of code
