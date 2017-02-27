@@ -9,7 +9,7 @@
 ### Integration Testing
 - Larger scale tests, carried out to demonstrate that different pieces of the system work together
 - Might cover the whole application, but can also be used for smaller scale tests, for example anything that uses a resource like a database or queue
-- Ususally carried out by a test team _after_ unit testing and _before_ system testing
+- Usually carried out by a test team _after_ unit testing and _before_ system testing
 
 ## What are the pros and cons?
 
