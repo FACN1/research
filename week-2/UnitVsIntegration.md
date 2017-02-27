@@ -31,4 +31,5 @@ Content in the first column | Content in the second column
 ## Examples
 
 ### Resources
-[12 second example](https://www.youtube.com/watch?v=0GypdsJulKE)
+- [Short example](https://www.youtube.com/watch?v=0GypdsJulKE)
+- ["What is Integration Testing?"](https://www.youtube.com/watch?v=QYCaaNz8emY)
