@@ -1,8 +1,15 @@
 # Unit vs Integration Testing
 
-### What are the differences?
+### Unit Testing
+- Used to test relatively small, isolated pieces / units of code
+- The tests should be narrow in scope, and easy to write and execute
+- They should be pure - external dependencies are "mocked" or "stubbed out"
+- Written by and for the programmer to identify bugs early in the development cycle
 
-### What are the pros and cons?
+### Integration Testing
+- Larger scale tests, carried out to test how different parts of the system work together
+- Might cover the whole application, but can also be used on a smaller scale (for example anything that makes use of an external resource like a database)
+- Usually carried out by a test team _after_ unit testing and _before_ system testing
 
 ### Integration Testing Approaches
 
@@ -16,9 +23,7 @@
    | Testing teams have to wait for all modules to complete.
    | Doesn't put preference on high priority modules.
 
-
-
-  #### Incrimental Testing
+  #### Incremental Testing
   In this approach, testing is done by joining two or more modules that are logically related. Then the other related modules are added and tested for the proper functioning. Process continues until all of the modules are joined and tested successfully.
   This process is carried out by using dummy programs called Stubs and Drivers. Stubs and Drivers do not implement the entire programming logic of the software module but just simulate data communication with the calling module.
 
@@ -28,7 +33,7 @@
 
   Incremental Testing is completed either:
   - Bottom Up, or
-  - Top Dow
+  - Top Down
 
 Pros | Cons
   ------------ | -------------
@@ -58,3 +63,9 @@ Test Case ID | Test Case Objective | Test Case Description | Expected Result
 ------------ | ------------------- | --------------------- | ---------------
   1 | Check the interface link between the Login and Mailbox module |	Enter login credentials and click on the Login button |	To be directed to the Mail Box
   2 | Check the interface link between the Mailbox and Delete Mails Module | From Mail box select an email and click delete button | Selected email should appear in the Deleted/Trash folder
+
+### Examples
+
+### Resources
+- [Short example](https://www.youtube.com/watch?v=0GypdsJulKE)
+- ["What is Integration Testing?"](https://www.youtube.com/watch?v=QYCaaNz8emY)
