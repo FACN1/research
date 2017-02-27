@@ -1,16 +1,29 @@
 # Unit vs Integration Testing
 
 ## Contents
-- [Intro](#unit-testing)
+- [Intro](#intro)
+- [Unit Testing](#unit-testing)
+- [Integration Testing](#integration-testing)
 - [Resources](#resources)
 
-### Unit Testing
+## Intro
+
+
+## Unit Testing
 - Used to test relatively small, isolated pieces / units of code
 - The tests should be narrow in scope, and easy to write and execute
 - They should be pure - external dependencies are "mocked" or "stubbed out"
 - Written by and for the programmer to identify bugs early in the development cycle
 
-### Integration Testing
+Pros | Cons
+------------ | -------------
+Fast to write | Frustrating/time consuming
+Very fast to run | Do not test the real-life functionality of the application
+Encourage good development practice (e.g. TDD) |
+Pick up bugs instantly |
+Save a lot of time in the future |
+
+## Integration Testing
 - Larger scale tests, carried out to test how different parts of the system work together
 - Might cover the whole application, but can also be used on a smaller scale (for example anything that makes use of an external resource like a database)
 - Usually carried out by a test team _after_ unit testing and _before_ system testing
