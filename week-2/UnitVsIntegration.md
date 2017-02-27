@@ -3,12 +3,12 @@
 ### Unit Testing
 - Used to test relatively small, isolated pieces / units of code
 - The tests should be narrow in scope, and easy to write and execute
-- They should be pure - outside dependencies are "mocked" or "stubbed out"
+- They should be pure - external dependencies are "mocked" or "stubbed out"
 - Written by and for the programmer to identify bugs early in the development cycle
 
 ### Integration Testing
 - Larger scale tests, carried out to test how different parts of the system work together
-- Might cover the whole application, but can also be used for smaller scale tests, for example anything that uses a resource like a database
+- Might cover the whole application, but can also be used on a smaller scale (for example anything that makes use of an external resource like a database)
 - Usually carried out by a test team _after_ unit testing and _before_ system testing
 
 ## What are the pros and cons?
