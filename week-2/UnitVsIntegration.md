@@ -1,5 +1,10 @@
 # Unit vs Integration Testing
 
+## Contents
+[Intro](#unit-testing)
+[Resources](#resources)
+
+
 ### Unit Testing
 - Used to test relatively small, isolated pieces / units of code
 - The tests should be narrow in scope, and easy to write and execute
@@ -16,7 +21,7 @@
 #### Big Bang
 All components are integrated together at once, and then tested.
 
-Pros | Cons
+{Pros | Cons
 ------------ | -------------
 Convenient for small systems | Fault Localization is difficult.
  | Some interferences could be easily missed.
