@@ -1,8 +1,4 @@
-https://github.com/foundersandcoders/master-reference/blob/master/coursebook/week-4/research-afternoon.md
-
-Topic 3: Packaging
-
-
+# Packaging
 
 ### What is a dependency?
 A project dependency is the logical, constraint based or preferential relationship between two activities or tasks such that the completion or the initiation of one is reliant on the completion or initiation of the other.
@@ -50,10 +46,6 @@ packages: collections of files that are bundled together and can be installed an
 A package manager keeps track of what software is installed on your computer, and allows you to easily install new software, upgrade software to newer versions, or remove software that you previously installed.
 
 
-
-
-
-
 ## NPM:
  * What is package manager?
 
@@ -86,13 +78,66 @@ A package manager keeps track of what software is installed on your computer, an
      ``` js
       var hapi = require('hapi')```
 
-
-
-
-
+      
 
 ### Why is it important to make sure that installed packages aren't included in your repositories?
 
 
 ???
 For example, have you ever made a pull from a repository, only to find 10 minutes later that a particular library has stopped working because another developer upgraded a dependency without telling you? If your dependencies are all checked into source control, then it’s perfectly conceivable that, when pulling the latest updates from your repository, you might not notice that a dependency has been updated. In contrast, a dependency-management tool requires you to execute a specific command to update your dependencies, which will (hopefully) provide clear feedback on which libraries have changed. This makes it harder to miss a change to one of your dependencies, which mitigates the chance of an error.
+
+
+## npm install
+running npm install with no arguments will install the dependencies specified in the package.json file. You will usually do this when you clone someone's project.
+```bash
+npm install
+# or shorthand:
+npm i
+```
+
+##### Install and list as a dependency:
+```bash
+npm install lubespackage --save
+npm install lubespackage -S
+```
+For packages which you are required for your project to run.
+
+
+##### Install and list as a development dependency:
+```bash
+npm install lubespackage --save-dev
+npm install lubespackage -D
+```
+For packages which might be used in development but not required for the project to run- e.g. unit testing packages, minifier packages.
+
+##### Install globally:
+```bash
+npm install lubespackage -g
+```
+Generally you would install globally packages you intend to use in the command line or which are not specific to how your project functions. Nodemon is a good example.
+
+It is generally a __bad idea__ to install other packages globally, because if you use these packages in your project they __will not__ be listed in the dependencies in your package.json file.
+
+__N.B.__ If you get a permission error when trying to install a package globally, check out this [walkthrough](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to fix the issue.
+
+##### Package Versions
+You might see something like this in the package.json file:
+```js
+{ "dependencies" :
+  {
+    "mypackage" : "^1.0.2",
+    "yourpackage" : ">1.0.2 <=2.3.4",
+    "ourpackage" : "2.0.1",
+    "xxx" : "<1.0.0 || >=2.3.1 <2.4.5"
+  }
+}
+```
+Or this in install instructions:
+```bash
+npm install lubespackage@1.0.1 --save
+```
+
+These show version numbers of packages. More info [here](https://docs.npmjs.com/files/package.json#dependencies).
+
+##### Further info:
+- npm docs for install- [link](https://docs.npmjs.com/cli/install)
