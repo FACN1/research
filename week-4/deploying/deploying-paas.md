@@ -38,6 +38,11 @@
 - **OVH** - PaaS, VPS and dedicated servers (unmanaged)
     - [PaaS site](https://www.runabove.com)
 
+##### Running a local/VPS/dedicated server 24/7
+- You can use `npm install forever -g` and `forever start index.js`
+- Use `forever stop index.js` to stop the server.
+- This allows you to run a server without having to leave the window open, or be connected to the server constantly
+
 **Demos**
 - Heroku demo
 - VPS/dedi demo
