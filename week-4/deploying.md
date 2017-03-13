@@ -7,8 +7,7 @@
 - You can see your environment variables by typing `printenv` into your console
 - You can add a new key-value pair to this list from the command line using `export HELLO=WORLD`
 - To remove this key-value pair you can type `unset HELLO`
-- Note environment variables must follow a naming convention - **all caps and snake case** (words separated by underscores) - for example:
-  - `export DATABASE_HOST=localhost`
+- Note environment variables must follow a naming convention - **all caps and snake case** (words separated by underscores) - for example `export DATABASE_HOST=localhost`
 - Variables set in this way are **temporary**, and will only remain active as long as the current terminal window is open
 
 #### process.env
@@ -39,4 +38,3 @@
   ```js
   console.log(process.env.DB_HOST);
   ```
-  
