@@ -14,7 +14,7 @@
 - Node.js gives you access to these environment variables on the `process.env` global object
 - You can access each individual value on this object using standard dot notation, for example `process.env.USER`
 
-#### DWYL env2 Module
+#### DWYL [env2 Module](https://github.com/dwyl/env2)
 - DWYL has created a Node.js module which loads environment variables from a `.env` file to the global `process.env` object for you
 - You can save this module to your project's `package.json` file using `npm install env2 --save`
 - The format for the `.env` file is as follows:
@@ -38,3 +38,7 @@
   ```js
   console.log(process.env.DB_HOST);
   ```
+
+#### Resources
+- DWYL [Learn Environment Variables](https://github.com/dwyl/learn-environment-variables)
+- DWYL [env2 - Environment Variable Loader](https://github.com/dwyl/env2)
