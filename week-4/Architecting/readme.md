@@ -1,11 +1,44 @@
-Seperation of Concerns
-Separation of concerns is a design principle to separate and break a piece of software into distinct sections that do not overlap in functionality or do but as little as possible. It is for software maintainability, as it aims to increase the effectiveness of the piece of software and allow code reuse. If SoC is not applied, it would be difficult to modify, test, or debug the code. Example on SoC: HTML, CSS and JavaScript: HTML defines the page structure while CSS defines how the page is presented and JavaScript defines how the content interacts with the user. If we need to change the interface of a webpage, we should not need to change the business logic of the software. Separation of concerns is achieved through modularity.
+####Seperation of Concerns
+##Separation of Concerns
+  Separation of Concerns (SoC) is a design principle to separate/break a piece of software into distinct sections that do not overlap in functionality or might do but as little as possible.
+  It is for software maintainability, as it aims to increase the effectiveness of the piece of software and allow code reuse.
+  If SoC is not applied, it would be difficult to modify, test, or debug the code.
+  Separation of concerns is achieved through modularity.
+  If we need to change the interface of a web page, we should not need to change the business logic of the software.
 
-Front End vs Back End
-Frontend is the presentation layer- handles accessibility concerns, asynchronous requests, web languages like HTML, CSS and JavaScript, and libraries like JQuery. Back end is the data access layer- handles the business logic, data storage and administration, security concerns… There are some crossovers between front end and back end development, as some presentation work is done on the server
+#Example on SoC:
+ HTML, CSS and JavaScript: HTML defines the page structure while CSS defines how the page is presented and JavaScript defines how the content interacts with the user.
 
-Server vs. Client Side
-there are basically two programs running at the same time: The code that lives on the server and responds to HTTP requests. The code that lives in the browser and responds to user input. Client side validation and server side validation In the Client Side Validation you can provide a better user experience by responding quickly at the browser level. When you perform a Client Side Validation, all the user inputs validated in the user's browser itself. Client Side validation does not require a round trip to the server In the Server Side Validation,the input submitted by the user is sent to the server and validated using one of server side scripting languages such as ASP.Net, PHP etc. After the validation process on the Server Side, the feedback is sent back to the client by a new dynamically generated web page. It is better to validate user input on Server Side because you can protect against the malicious users, who can easily bypass your Client Side scripting language and submit dangerous input to the server. Server-side templating means that the content gets rendered, that is the resulting HTML code from the server While Client-side templating means the resulting HTML gets rendered in the browser through the use of Javascript libraries
+###Front End vs Back End
+##Front end (or the presentation layer) handles:
+* accessibility concerns
+* asynchronous requests
+* web languages like HTML, CSS and JavaScript
+* libraries like JQuery
+
+##Back end (or the data access layer) handles:
+* the business logic
+* data storage and administration
+* security concerns
+* scalability
+
+Note: There are some crossovers between front end and back end development, as some presentation work is done on the server
+
+
+###Server vs. Client Side
+##Client side validation and server side validation
+In the Client Side Validation you can provide a better user experience by responding quickly at the browser level.
+When you perform a Client Side Validation, all the user inputs validated in the user's browser itself.
+Client Side validation does not require a round trip to the server
+In the Server Side Validation,the input submitted by the user is sent to the server and validated using one of server
+side scripting languages such as ASP.Net, PHP etc. After the validation process on the Server Side, the feedback is sent back to the client by a new dynamically generated web page.
+It is better to validate user input on Server Side because you can protect against the malicious users,
+who can easily bypass your Client Side scripting language and submit dangerous input to the server.
+
+##Server-side templating and Client-side templating
+Server-side templating means that the content gets rendered, that is the resulting HTML code from the server
+While Client-side templating means the resulting HTML gets rendered in the browser through the use of Javascript libraries.
+
 
 Alternative backend technologies:
 PHP - one of the most popular language for web development, its pre-installed in almost all hosting services and has a syntax very similar to C and JAVA.
