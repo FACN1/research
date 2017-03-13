@@ -1,12 +1,11 @@
 # Packaging
 
 ### What is a dependency?
-A project dependency is the logical, constraint based or preferential relationship between two activities or tasks such that the completion or the initiation of one is reliant on the completion or initiation of the other.
 Dependencies can be categorized in a number of ways based on conditions like completion and initiation of tasks, relationship of tasks to the project and the company and the reason for the existence of the dependency.
 
 A dependency is typically a library, framework or component, usually provided by a third party and upon which your website’s functionality depends. It could be a simple date-conversion library or an entire framework.
-As you can imagine, a typical website depends on several libraries, each of which provides prebuilt functionality on which to base your code. These elements are an integral part of the website’s code base; as a result, it’s critical that all developers work with an identical set of these dependencies at all times.
-To facilitate this, we can define a process for managing the various libraries, frameworks and components on which a particular code base depends. This dependency-management process is often controlled with a central tool that keeps track of the versions of the packages required by a project.
+
+we can define a process for managing the various libraries, frameworks and components on which a particular code base depends. This dependency-management process is often controlled with a central tool that keeps track of the versions of the packages required by a project.
 
 
 ### Why might you want to use a dependency in your project, rather than writing the code from scratch?
