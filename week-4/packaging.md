@@ -70,7 +70,7 @@ You might see something like this in the package.json file:
 ```js
 { "dependencies" :
   {
-    "mypackage" : ">=1.0.2",
+    "mypackage" : "^1.0.2",
     "yourpackage" : ">1.0.2 <=2.3.4",
     "ourpackage" : "2.0.1",
     "xxx" : "<1.0.0 || >=2.3.1 <2.4.5"
