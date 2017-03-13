@@ -19,18 +19,24 @@
 - DWYL has created a Node.js module which loads environment variables from a `.env` file to the global `process.env` object for you
 - You can save this module to your project's `package.json` file using `npm install env2 --save`
 - The format for the `.env` file is as follows:
+
   ```
   export DB_HOST=127.0.0.1
   export DB_PORT=9200
   export DB_USER=anon
   export DB_PASS=password
   ```
+
 - These files should be located in the **root directory** of the project, and must be added to the `.gitignore` file which prevents them from being uploaded to Github
 - To load these variables from the `.env` file into the `process.env` object, add the following line to your script / module:
+
   ```js
   const env = require('env2')('./path-to-your/.env')
   ```
+
 - The data in the `.env` file will now be automatically stored in the `process.env` object as key-value pairs, and can be accessed from anywhere within that script / module:
+
   ```js
   console.log(process.env.DB_HOST);
   ```
+  
