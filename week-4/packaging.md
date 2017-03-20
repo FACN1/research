@@ -1,12 +1,11 @@
 # Packaging
 
 ### What is a dependency?
-A project dependency is the logical, constraint based or preferential relationship between two activities or tasks such that the completion or the initiation of one is reliant on the completion or initiation of the other.
 Dependencies can be categorized in a number of ways based on conditions like completion and initiation of tasks, relationship of tasks to the project and the company and the reason for the existence of the dependency.
 
 A dependency is typically a library, framework or component, usually provided by a third party and upon which your website’s functionality depends. It could be a simple date-conversion library or an entire framework.
-As you can imagine, a typical website depends on several libraries, each of which provides prebuilt functionality on which to base your code. These elements are an integral part of the website’s code base; as a result, it’s critical that all developers work with an identical set of these dependencies at all times.
-To facilitate this, we can define a process for managing the various libraries, frameworks and components on which a particular code base depends. This dependency-management process is often controlled with a central tool that keeps track of the versions of the packages required by a project.
+
+we can define a process for managing the various libraries, frameworks and components on which a particular code base depends. This dependency-management process is often controlled with a central tool that keeps track of the versions of the packages required by a project.
 
 
 ### Why might you want to use a dependency in your project, rather than writing the code from scratch?
@@ -31,29 +30,20 @@ In a world without cross-team dependencies projects:
 * tactics to reduce their impact, how to resolve them
 * recognizing what features they should look for in a dependency management tool.
 
-
 ???
 Why do cross-team dependencies matter?
 We interviewed over ten program managers who lead a sizable number of teams in their organizations aiming to find out the top reasons programs fail. 80% of them included “dependency management” as important job at a high level to make the program successful. Missed or incomplete understanding of dependencies across teams and third parties is an important one. At the same time, dependencies also matter at team level. Dependencies may hurt agile team’s accountability of getting things done at the end of the sprint or iteration.
 
 
-
-### NPM: What is a package manager?
-As the name suggest, package managers manage packages
-
-packages: collections of files that are bundled together and can be installed and removed as a group.
-
-A package manager keeps track of what software is installed on your computer, and allows you to easily install new software, upgrade software to newer versions, or remove software that you previously installed.
-
-
 ## NPM:
- * What is package manager?
+ * What is a package manager?
 
    - A package manager is a tool that allows you to manage all of your libraries in a meaningful and logical manner.
 
    - Packages contain metadata, such as the software's name, description, version number, vendor and a list of dependencies necessary for the software to run properly.
 
    - Package managers are designed to eliminate the need for manual installs and updates.
+   - packages: collections of files that are bundled together and can be installed and removed as a group.
 
  * How does it help with dependencies?
 
@@ -76,15 +66,8 @@ A package manager keeps track of what software is installed on your computer, an
    - for example if you are creating a Node.js module you can require it :
 
      ``` js
-      var hapi = require('hapi')```
-
-      
-
-### Why is it important to make sure that installed packages aren't included in your repositories?
-
-
-???
-For example, have you ever made a pull from a repository, only to find 10 minutes later that a particular library has stopped working because another developer upgraded a dependency without telling you? If your dependencies are all checked into source control, then it’s perfectly conceivable that, when pulling the latest updates from your repository, you might not notice that a dependency has been updated. In contrast, a dependency-management tool requires you to execute a specific command to update your dependencies, which will (hopefully) provide clear feedback on which libraries have changed. This makes it harder to miss a change to one of your dependencies, which mitigates the chance of an error.
+      var hapi = require('hapi')
+      ```
 
 
 ## npm install
@@ -141,3 +124,35 @@ These show version numbers of packages. More info [here](https://docs.npmjs.com/
 
 ##### Further info:
 - npm docs for install- [link](https://docs.npmjs.com/cli/install)
+
+
+## Package files:
+ * Where does NPM install packages?
+
+  - Global libraries
+    - You can run `npm list -g` to see where global libraries are installed.
+    - On Unix systems they are normally placed in `/usr/local/lib/node or /usr/local/lib/node_modules`
+    - Windows XP - `%USERPROFILE%\Application Data\npm\node_modules`
+    - Windows 7 - `%AppData%\npm\node_modules`
+    - Windows 10 - `C:\Users\{YOUR USERNAME HERE}\AppData\Roaming\npm;C:\Program Files\nodejs`
+
+  - Non-global libraries
+    - Non-global libraries are installed the `node_modules` sub folder in the folder you are currently in.
+
+    - You can run `npm list` to see the installed non-global libraries for your current location.  
+
+ *  Why is it important to make sure that installed packages aren't included in your repositories?
+
+   - You are not going to make changes to the files of the installed packages so you dont need to track them and
+
+   - you dont want to upload them to github cause its pointless.
+   - For example, have you ever made a pull from a repository, only to find 10 minutes later that a particular library has stopped working because another developer upgraded a dependency without telling you? If your dependencies are all checked into source control, then it’s perfectly conceivable that, when pulling the latest updates from your repository, you might not notice that a dependency has been updated. In contrast, a dependency-management tool requires you to execute a specific command to update your dependencies, which will (hopefully) provide clear feedback on which libraries have changed. This makes it harder to miss a change to one of your dependencies, which mitigates the chance of an error.
+
+ * How do you prevent Git from including these files in your repository?
+    * git ignore
+      - A .gitignore file can be used to tell git which files to ignore.
+E.g. create a .gitignore file in the repository and add to it:
+ ``` bash
+ .gitignore
+node_modules
+```
