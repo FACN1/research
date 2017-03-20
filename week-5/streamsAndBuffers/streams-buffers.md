@@ -21,7 +21,7 @@
 
 #### Streams
 - Streams are a form of **partially buffered access**
-- Streams return small pieces of data (using a buffer) and trigger a callback when each new piece of data is available for processing
+- Streams return small pieces of data (using a buffer) and trigger an event when each new piece of data is available for processing
 - Since streams are partially buffered, we can process each piece of data **as soon as it is read** - this means we don't necessarily need to buffer / save the whole file into memory
 - The Node stream interface consists of two parts:
   - Readable streams
