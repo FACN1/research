@@ -1,34 +1,33 @@
-# Research day topics
-Research day should be thought of as a [spike](http://www.extremeprogramming.org/rules/spike.html) to help with your end-of-week project
+# Code Coverage
 
-## Week 1 - toolkit
-+ [Command Line](nice-link-here)
-+ [Git/Github Best Practices](nice-link-here)
-+ [Accessibility](nice-link-here)  
-+ CSS - [Chosen website](https://github.com/MohamedOmarii/accessibility)
+### What is code coverage ?
 
-[Before](nice-link-here) | [After](nice-link-here)
+- Simply put, code coverage is a way of ensuring that your tests are actually testing your code. Coverage will tell you how much of your code you exercised by running the test.
 
-## Week 2 - testing
 
-+ [Unit vs Integration testing](nice-link-here)
+### Istanbul installation :
 
-+ [Manual testing vs. Automation testing](nice-link-here)
+   1. It's prefered to install istanbul as a "devDependencies" in the project :  
 
-+ [Technical Spikes](nice-link-here)
+    `npm i istanbul --save-dev`
 
-+ [QUnit Assertions](nice-link-here)
+ 2 . go to the `package.json`
+    - add this line to the package.json  
+    `"coverage": "istanbul cover ./test.js",`
 
-+ [BlanketJS](nice-link-here)
+    ##### Example :
+    ``` javascript
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "coverage": "istanbul cover ./test.js",
+      "start": "node server.js"
+    },
+    ```
 
-## Week 3 - APIs
+    3 . you can run the coverage using this command in your terminal :
 
-## Week 4 - Node 1
+    `npm run coverage`
 
-## Week 5 - Node 2
+-------------------------------------------------------------------------------
 
-## Week 6 - Postgres
-
-## Week 7 - Hapi views
-
-## Week 8 - Hapi auth
+##### Detailed guide on istanbul : [here](https://github.com/dwyl/learn-istanbul#what)
