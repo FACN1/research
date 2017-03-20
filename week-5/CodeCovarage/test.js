@@ -5,7 +5,7 @@ const test = require('tape');
 test('Testing validateName', (t) => {
 
   t.equal(validateName().message, 'No input given', "test input was given")
-  t.equal(validateName(['not','a','string']).message, "the input is not a string","Tests whether it is a string");
+  t.equal(validateName(['not','a','strisng']).message, "the input is not a string","Tests whether it is a string");
   // t.equal(validateName("a").message, "the input must be at least 2 letters",
   // "check input length above 2")
   t.end();
