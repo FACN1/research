@@ -42,18 +42,6 @@ CREATE TABLE Persons (
 );
 
 ```
-### Create a visual representation of a mock schema for a database about Founders & Coders, using as many different kinds of relationship as you can. Explain the logic behind it.
+### Example Schema:
 
-Founders and Coders:
-- People
-    - Mentors
-    - Students
-    - Applicants
-    - Directors
-
-- Curriculum
-    - Pre-requisits
-    - Pre-course
-    - Week 1
-    - Week 2
-    - Week 3
+![link](./schema-example.png)
