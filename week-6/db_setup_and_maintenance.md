@@ -20,6 +20,8 @@ psql dbname < infile
 ```
 
 ## Example
-
-
-## Useful links
+Download the sql script file, then:
+```bash
+# -f executes commands from file, then exits
+psql -f <filename>
+```
