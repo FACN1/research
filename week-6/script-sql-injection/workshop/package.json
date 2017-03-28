@@ -1,0 +1,18 @@
+{
+  "name": "pg-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "env2": "^2.1.1",
+    "nodemon": "^1.11.0",
+    "pg": "^6.1.5"
+  }
+}
