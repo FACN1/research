@@ -33,16 +33,19 @@ const users = {
   }
 }
 // Create hashed passwords of 'password'. First arg 'user-pword' Second 'Salting rounds'
-console.log(bcrypt.hashSync('password', 0))
-console.log(bcrypt.hashSync('password', 0))
+console.log(bcrypt.hashSync('password', 1))
+console.log(bcrypt.hashSync('password', 1))
 
-console.log(bcrypt.hashSync('password', 1))
-console.log(bcrypt.hashSync('password', 1))
+// Creates the same passwords because using same salt
+bcrypt.genSalt(5, function(err, salt){
+  console.log(bcrypt.hashSync('password', salt))
+  console.log(bcrypt.hashSync('password', salt))
+})
 
 // Find out how many rounds of hashing were used to produce hashed password
 console.log(bcrypt.getRounds('$2a$10$iqJSHD.BGr0E2IxQwYgJmeP3NvhPrXAeLSaGCj6IR/XU5QtjVu5Tm'))
 
-// Bad easily crackable hashing function
+// Create bad easily crackable hashing function
 String.prototype.hashCode = function(){
     var hash = 0;
     if (this.length == 0) return hash;
@@ -93,3 +96,4 @@ server.register(basic, (err) => {
     console.log(`Server running on port: ${server.info.uri}`)
   })
 })
+
