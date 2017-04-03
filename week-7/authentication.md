@@ -1,8 +1,8 @@
 # Authentication
 
 ## What is it?
-
-## How to implement it in Hapi
+In the realm of the web,
+authentication is **the process of verifying the identity an individual, usually using a password.**
 
 ## Hashing
 What is it and why is it useful?
