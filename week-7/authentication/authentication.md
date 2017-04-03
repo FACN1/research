@@ -7,7 +7,7 @@ authentication is **the process of verifying the identity an individual, usually
 ## Hashing
 ### Hashing a password
 
-![password_hash](https://github.com/FACN1/research/raw/master/week-7/authentication/password_hash.gif) "Password hashing"
+![password_hash](https://github.com/FACN1/research/raw/master/week-7/authentication/password_hash.gif)
 
 ### Checking the password:
 
@@ -28,6 +28,9 @@ authentication is **the process of verifying the identity an individual, usually
 - bcrypt generates a unique salt for each user, and adds this salt
 
 ### Why is it useful?
+
+- If a database is hacked (which should always be assumed - data breaches happen all the time), then if passwords are stored in plaintext, crackers can publish all the passwords on the internet, and anyone can try using the same passwords on other websites that the user uses, such as emails.
+  - However, if passwords are sufficiently hashed, and sensitive data such as credit card details is well encrypted, then the data is less useful for crackers. 
 
 **Compute Time**
 - The longer it takes to calculate the hash of a password, the better. This is because if a database is compromised, a cracker will try to brute force passwords to get the original password.
