@@ -8,8 +8,6 @@ server.connection({
   port: 3000
 })
 
-// const schema = joi.object().keys({
-// });
 
 const routes = [
   {
@@ -22,7 +20,8 @@ const routes = [
       validate: {
         params: {
           email: joi.string().email().required(),
-          password: joi.string().regex(/^[a-zA-Z0-9]{8,20}$/).required()
+          // password: joi.string().regex(/^[a-zA-Z0-9]{8,20}$/).required()
+          password: joi.string().alphanum().required()
         }
       }
     }
