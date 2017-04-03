@@ -42,6 +42,21 @@ console.log(bcrypt.hashSync('password', 1))
 // Find out how many rounds of hashing were used to produce hashed password
 console.log(bcrypt.getRounds('$2a$10$iqJSHD.BGr0E2IxQwYgJmeP3NvhPrXAeLSaGCj6IR/XU5QtjVu5Tm'))
 
+// Bad easily crackable hashing function
+String.prototype.hashCode = function(){
+    var hash = 0;
+    if (this.length == 0) return hash;
+    for (i = 0; i < this.length; i++) {
+        char = this.charCodeAt(i);
+        hash = ((hash<<5)-hash)+char;
+        hash = hash & hash; // Convert to 32bit integer
+    }
+    return hash;
+}
+
+console.log('password'.hashCode())
+
+
 // Define validation function
 const validate = function(request, username, password, callback) {
   const user = users[username]
