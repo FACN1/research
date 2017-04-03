@@ -25,6 +25,10 @@ Research day should be thought of as a [spike](http://www.extremeprogramming.org
 ## Week 5 Node 2
 
 ## Week 6 Postgres
+- [Schemas and Relationships](https://github.com/FACN1/research/blob/master/week-6/Schemas-and-relationships.md)
+- [Database setup and maintenance](https://github.com/FACN1/research/blob/master/week-6/Schemas-and-relationships.md)
+- [Testing](https://github.com/FACN1/research/blob/master/week-6/Testing.md)
+- [Script injections / safety issues](https://github.com/FACN1/research/tree/master/week-6/script-sql-injection)
 
 ## Week 7 Hapi Views
 
