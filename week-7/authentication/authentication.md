@@ -7,6 +7,16 @@ authentication is **the process of verifying the identity an individual, usually
 ## Hashing
 What is it and why is it useful?
 
+
+### Hashing a password
+
+![password_hash](https://github.com/FACN1/research/blob/master/week-7/authentication/password_hash.gif "Password hashing")
+
+### Checking the password:
+
+![password_check](https://github.com/FACN1/research/blob/master/week-7/authentication/password_check.gif "Password check")
+
+
 ## Example
 See the example server ([link])(). It uses:
 
