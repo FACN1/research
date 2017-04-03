@@ -23,6 +23,10 @@ Research day should be thought of as a [spike](http://www.extremeprogramming.org
 ## Week 4 Node 1
 
 ## Week 5 Node 2
+- [Code Coverage](https://github.com/FACN1/research/tree/master/week-5/CodeCovarage)
+- [Continuous Integration](https://github.com/FACN1/research/blob/master/week-5/continuous-integration/notes.md)
+- [Streams and Buffers](https://github.com/FACN1/research/blob/master/week-5/streamsAndBuffers/streams-buffers.md)
+- [Make a request from the server](https://github.com/FACN1/research/blob/master/week-5/server_request.md)
 
 ## Week 6 Postgres
 - [Schemas and Relationships](https://github.com/FACN1/research/blob/master/week-6/Schemas-and-relationships.md)
