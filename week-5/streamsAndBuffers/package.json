@@ -1,0 +1,14 @@
+{
+  "name": "streams-and-buffers",
+  "version": "1.0.0",
+  "description": "Learn about streams",
+  "main": "readStr.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mavis and Jack",
+  "license": "ISC",
+  "devDependencies": {
+    "split": "^1.0.0"
+  }
+}
