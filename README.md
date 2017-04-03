@@ -28,4 +28,9 @@ Research day should be thought of as a [spike](http://www.extremeprogramming.org
 
 ## Week 7 Hapi Views
 
+- [Validation](https://github.com/FACN1/research/tree/master/week-7/validation)
+- [Authentication](https://github.com/FACN1/research/tree/master/week-7/authentication)
+- [Cookies]()
+- [Templating](https://github.com/FACN1/research/tree/master/week-7/templating)
+
 ## Week 8 Hapi Auth
