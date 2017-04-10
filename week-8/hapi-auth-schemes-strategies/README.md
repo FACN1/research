@@ -70,3 +70,5 @@ server.route({
 ```
 
 JWT Scheme Example
+
+- [In server.js](./server.js)
