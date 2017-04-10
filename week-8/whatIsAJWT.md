@@ -14,11 +14,15 @@ The **signature** is made up of a hash of: the header, the payload and a secret.
 
 ## How do these all work together?
 
-1. User logs into a site either using 3rd party or the app's own user/password set up.
-2. The authentication server verifies the login and issues a JWT to the user.
-3. The user then sends the JWT in the 'Authorization' header in requests to the app.
-4. The app uses the signature to the verify that the JWT came from a legitimate source.
-5. The app believes the claims in the JWT's payload (eg, that the user is an admin) and lets them do what they wanted to do.
+> 1. User logs into a site either using 3rd party or the app's own user/password set up.
+
+> 2. The authentication server verifies the login and issues a JWT to the user.
+
+> 3. The user then sends the JWT in the 'Authorization' header in requests to the app.
+
+> 4. The app uses the signature to the verify that the JWT came from a legitimate source.
+
+> 5. The app believes the claims in the JWT's payload (eg, that the user is an admin) and lets them do what they wanted to do.
 
 ### The header
 
