@@ -27,6 +27,10 @@
 http://stackoverflow.com/questions/3220660/local-storage-vs-cookies
 
 ## Cookies in Hapi
+- it's easy to set cookies (see below)
+- see the docs: https://hapijs.com/tutorials/cookies?lang=en_US
+- see the cookies on the server from inside the headers of the request
+
 ### To configure a cookie:
 ```javascript
 server.state(name, options)
@@ -44,7 +48,7 @@ where 'data' is the name of the cookie
 reply('Hello').unstate('data');
 ```
 
-## hapi-auth-cookie module
+## hapi-auth-cookie
 https://github.com/hapijs/hapi-auth-cookie
 
 Workshop from master ref week 7:
