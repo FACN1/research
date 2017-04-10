@@ -24,6 +24,49 @@ A strategy is a configured instance of a scheme with an assigned name. Strategie
 
 credit [@Matt Harrison](http://stackoverflow.com/users/1402929/matt-harrison)
 
-Example
+### Hapi Example:
 
-validate function, apply to multiple routes with hapi
+Scheme:
+```js
+const server = new Hapi.Server();
+server.connection({ port: 80 });
+
+const scheme = function (server, options) {
+
+    return {
+        authenticate: function (request, reply) {
+
+            const req = request.raw.req;
+            const authorization = req.headers.authorization;
+            if (!authorization) {
+                return reply(Boom.unauthorized(null, 'Custom'));
+            }
+
+            return reply.continue({ credentials: { user: 'john' } });
+        }
+    };
+};
+```
+
+Strategy:
+```js
+const server = new Hapi.Server();
+server.connection({ port: 80 });
+
+server.auth.scheme('custom', scheme);
+server.auth.strategy('default', 'custom');
+
+server.route({
+    method: 'GET',
+    path: '/',
+    config: {
+        auth: 'default',
+        handler: function (request, reply) {
+
+            return reply(request.auth.credentials.user);
+        }
+    }
+});
+```
+
+JWT Scheme Example
