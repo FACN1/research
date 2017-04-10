@@ -1,7 +1,7 @@
 # hapi-auth-cookie
 
 ## Cookies, local storage, session storage...???
-Cookies:
+### Cookies:
 - stored in the browser
 - sent to the server with each request
 - usually intended to be read by the server, but can also be read by the browser
@@ -9,13 +9,13 @@ Cookies:
 - can't store lots of data
 - if you want to store more data, you could store an id in a cookie and the data in a database
 
-local storage:
+### local storage:
 - stored in the browser
 - never seen by the server
 - no expiration date
 - previously didn't have full browser support, but now does
 
-session storage: (basically the same as local storage but it expires)
+### session storage: (basically the same as local storage but it expires)
 - stored in the browser
 - never seen by the server
 - expires when the browser is closed (i.e. browser session not site session)
@@ -23,14 +23,23 @@ session storage: (basically the same as local storage but it expires)
 ### example
 - Storing the items in a person's shopping cart: cookies,local storage, store in a database, or something else?
 
+### links
 http://stackoverflow.com/questions/3220660/local-storage-vs-cookies
 
 ## Cookies in Hapi
-Setting a cookie:
+### To configure a cookie:
+```javascript
+server.state(name, options)
+```
+where name is a string, the name of the cookie
+
+### Setting a cookie:
 ```javascript
 reply('Hello').state('data', { firstVisit: false });
 ```
-Clearing a cookie:
+where 'data' is the name of the cookie
+
+### Clearing a cookie:
 ```javascript
 reply('Hello').unstate('data');
 ```
