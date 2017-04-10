@@ -51,9 +51,7 @@ reply('Hello').unstate('data');
 ## hapi-auth-cookie
 https://github.com/hapijs/hapi-auth-cookie
 
-Workshop from master ref week 7:
-
-https://github.com/SavageWilliam/hapi-auth-cookie-ws
+https://futurestud.io/tutorials/hapi-cookie-authentication-and-remember-me
 
 ## Links
 Hapi cookies- https://hapijs.com/tutorials/cookies?lang=en_US
