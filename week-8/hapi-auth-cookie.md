@@ -49,9 +49,13 @@ reply('Hello').unstate('data');
 ```
 
 ## hapi-auth-cookie
-https://github.com/hapijs/hapi-auth-cookie
+- A plugin that lets you use cookies for session management
+- Once the user has signed in an encrypted cookie is created
+- Every subsequent request made on the server will have this cookie, which can be authenticated and validated
 
-https://futurestud.io/tutorials/hapi-cookie-authentication-and-remember-me
+https://futurestud.io/tutorials/hapi-cookie-authentication-and-remember-me (we came across this a bit last minute, but it's really good)
+
+https://github.com/hapijs/hapi-auth-cookie
 
 ## Links
 Hapi cookies- https://hapijs.com/tutorials/cookies?lang=en_US
