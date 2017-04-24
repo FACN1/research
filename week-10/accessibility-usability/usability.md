@@ -44,3 +44,21 @@
 - Right = GOOD
   - Only one primary goal / call to action on the page
   - Content is organised in more logical format - clear buttons for each different new page
+  
+### Quantify your UX
+
+You can embed code in your website from multiple service providers that tracks users on your website.
+
+From this data you can determine:
+
+- Where users enter and exit your website
+- What paths they take on your site
+- What technology they use
+- Where are there errors in your funnels (funneling users to a goal)
+- Opportunities for improved flow
+- [A/B testing](https://blog.kissmetrics.com/how-to-run-an-ab-test-in-google-analytics/) results
+
+#### Google Analytics UX Setup [Example](https://www.sitepoint.com/5-ways-use-google-analytics-ux-research/)
+
+Google analytics is free for a basic account, and quite robust when set up well. 
+![Anayltics dashboard](https://verdemedia.com/wp-content/uploads/2015/12/google-analytics-dashboard.png)
